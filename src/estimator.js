@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable max-len */
 /* eslint-disable no-fallthrough */
 /* eslint-disable radix */
 /* eslint-disable linebreak-style */
@@ -48,7 +51,6 @@ const covid19ImpactEstimator = (data) => {
         days = data.timeToElapse;
     }
     return days;
-
   };
 
   const days = daysConverter(data.periodType, data.timeToElapse);
@@ -94,7 +96,7 @@ const xmlController = (req, res) => {
 const logController = (req, res) => {
   res.type('text/*');
   res.sendFile(path.join(__dirname, 'access.log'));
-}
+};
 
 app.post('/api/v1/on-covid-19', restController);
 app.get('/api/v1/on-covid-19/json', restController);
