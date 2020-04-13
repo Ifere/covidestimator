@@ -108,4 +108,4 @@ app.listen(port, () => {
 });
 
 
-// module covid19ImpactEstimator;
+module.exports = covid19ImpactEstimator;
