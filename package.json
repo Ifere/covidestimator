@@ -5,10 +5,16 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "node ./src/estimator",
     "lint": "eslint ./src/"
   },
   "dependencies": {
-    "on-covid-19": "^0.1.3"
+    "express": "^4.17.1",
+    "express-xml-bodyparser": "^0.3.0",
+    "morgan": "^1.10.0",
+    "on-covid-19": "^0.1.3",
+    "xml": "^1.0.1",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
